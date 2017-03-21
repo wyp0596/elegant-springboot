@@ -13,6 +13,7 @@
         <module>hello-world</module>
         <module>dubbo-server</module>
         <module>dubbo-client</module>
+        <module>exception-handle</module>
     </modules>
 
 
