@@ -1,0 +1,10 @@
+server:
+  port: 8081
+## Dubbo 服务端配置
+spring:
+  dubbo:
+    application:
+      name: consumer
+    registry:
+      address: zookeeper://127.0.0.1:2181
+    scan: com.ajavac.service

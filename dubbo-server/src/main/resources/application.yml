@@ -1,0 +1,14 @@
+server:
+  port: 8080
+## Dubbo 服务端配置
+spring:
+  dubbo:
+    application:
+      name: provider
+    registry:
+      address: zookeeper://127.0.0.1:2181
+    protocol:
+      name: dubbo
+      host: 192.168.17.105 # 填写ip或者域名,不填则自动获取(可能有误)
+      port: 20888
+    scan: com.ajavac.service
