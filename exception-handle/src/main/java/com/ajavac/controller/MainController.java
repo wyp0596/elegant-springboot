@@ -2,7 +2,8 @@ package com.ajavac.controller;
 
 import com.ajavac.dto.Hello;
 import com.ajavac.dto.JSONResponse;
-import com.ajavac.enums.ErrorCodeEnum;
+import com.ajavac.enums.GlobalErrorEnum;
+import com.ajavac.enums.HelloErrorEnum;
 import com.ajavac.exception.MyRuntimeException;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -29,11 +30,16 @@ public class MainController {
 
     @GetMapping(path = "exception1")
     public JSONResponse<Hello> exception1() {
-        throw new MyRuntimeException(ErrorCodeEnum.NOT_FOUND);
+        throw new MyRuntimeException(GlobalErrorEnum.NOT_FOUND);
     }
 
     @GetMapping(path = "exception2")
     public JSONResponse<Hello> exception2() throws Exception {
+        throw new MyRuntimeException(HelloErrorEnum.NAME_EXIST);
+    }
+
+    @GetMapping(path = "exception3")
+    public JSONResponse<Hello> exception3() throws Exception {
         throw new Exception("test");
     }
 

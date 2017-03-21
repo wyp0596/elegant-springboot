@@ -1,7 +1,7 @@
 package com.ajavac.dto;
 
 import com.ajavac.enums.ErrorCode;
-import com.ajavac.enums.ErrorCodeEnum;
+import com.ajavac.enums.GlobalErrorEnum;
 
 /**
  * JSON返回对象
@@ -22,7 +22,7 @@ public class JSONResponse<T> {
     }
 
     public JSONResponse(T data) {
-        this(ErrorCodeEnum.SUCCESS, data);
+        this(GlobalErrorEnum.SUCCESS, data);
     }
 
     public JSONResponse(ErrorCode response) {

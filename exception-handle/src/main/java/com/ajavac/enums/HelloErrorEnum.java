@@ -1,19 +1,17 @@
 package com.ajavac.enums;
 
 /**
- * 错误代号枚举类
+ * 业务错误代号枚举类
  * Created by wyp0596 on 21/03/2017.
  */
-public enum ErrorCodeEnum implements ErrorCode {
-    SUCCESS(200, ""),//正确返回
-    UNKNOWN_ERROR(500, "unknown_error"),//未知错误
-    NOT_FOUND(404, "not_found"),
+public enum HelloErrorEnum implements ErrorCode {
+    NAME_EXIST(1001, "名字已存在"),
     ;
 
     private int code;
     private String msg;
 
-    ErrorCodeEnum(int code, String msg) {
+    HelloErrorEnum(int code, String msg) {
         this.code = code;
         this.msg = msg;
     }

@@ -1,7 +1,7 @@
 package com.ajavac.config;
 
 import com.ajavac.dto.JSONResponse;
-import com.ajavac.enums.ErrorCodeEnum;
+import com.ajavac.enums.GlobalErrorEnum;
 import com.ajavac.exception.MyRuntimeException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -23,6 +23,7 @@ public class MyExceptionHandler {
             MyRuntimeException e = (MyRuntimeException) exception;
             return new JSONResponse(e.getResponse());
         }
-        return new JSONResponse(ErrorCodeEnum.UNKNOWN_ERROR);
+
+        return new JSONResponse(GlobalErrorEnum.UNKNOWN_ERROR);
     }
 }
