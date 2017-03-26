@@ -15,6 +15,7 @@
         <module>dubbo-client</module>
         <module>exception-handle</module>
         <module>mybatis</module>
+        <module>data-jpa</module>
     </modules>
 
 
