@@ -16,6 +16,7 @@
         <module>exception-handle</module>
         <module>mybatis</module>
         <module>data-jpa</module>
+        <module>redis-and-lock</module>
     </modules>
 
 
