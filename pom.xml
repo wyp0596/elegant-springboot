@@ -17,6 +17,7 @@
         <module>mybatis</module>
         <module>data-jpa</module>
         <module>redis-and-lock</module>
+        <module>netty</module>
     </modules>
 
 

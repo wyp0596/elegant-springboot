@@ -1,0 +1,9 @@
+server:
+  port: 8080
+
+netty:
+  port: 5151
+logging:
+  level:
+    root: info
+    com.ajavac: debug

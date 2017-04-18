@@ -9,6 +9,6 @@ spring:
       address: zookeeper://127.0.0.1:2181
     protocol:
       name: dubbo
-      host: 192.168.17.105 # 填写ip或者域名,不填则自动获取(可能有误)
-      port: 20888
+#      host: 192.168.17.105 # 填写ip或者域名,不填则自动获取(可能有误)
+      port: -1
     scan: com.ajavac.service
