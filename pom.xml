@@ -19,6 +19,7 @@
         <module>redis-and-lock</module>
         <module>netty</module>
         <module>rabbitmq</module>
+        <module>eureka-server</module>
     </modules>
 
 

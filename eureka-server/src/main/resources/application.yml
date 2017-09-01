@@ -1,0 +1,12 @@
+server:
+  port: 8761
+
+eureka:
+  server:
+    enableSelfPreservation: false
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    eureka-server-read-timeout-seconds: 50
+    serviceUrl:
+      defaultZone: http://localhost:${server.port}/eureka/
