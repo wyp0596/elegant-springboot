@@ -21,6 +21,8 @@
         <module>rabbitmq</module>
         <module>eureka-server</module>
         <module>commons</module>
+        <module>spring-cloud-provider</module>
+        <module>spring-cloud-consumer</module>
     </modules>
 
 
