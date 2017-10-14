@@ -10,4 +10,4 @@ spring:
 
 mybatis:
   type-aliases-package: com.ajavac.domain
-  mapper-locations: mapper/*.xml
+  mapper-locations: mapper/**/*.xml
