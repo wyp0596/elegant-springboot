@@ -1,0 +1,22 @@
+
+
+jar {
+	baseName = 'eureka-server'
+	version = '0.0.1-SNAPSHOT'
+}
+
+
+group = 'com.ajavac'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+
+dependencyManagement {
+	imports {
+		mavenBom 'org.springframework.cloud:spring-cloud-dependencies:Dalston.SR4'
+	}
+}
+
+dependencies {
+	compile 'org.springframework.cloud:spring-cloud-starter-eureka-server'
+}

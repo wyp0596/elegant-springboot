@@ -1,0 +1,15 @@
+
+
+jar {
+	baseName = 'commons'
+	version = '0.0.1-SNAPSHOT'
+}
+
+
+group = 'com.ajavac'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+dependencies {
+	compile group: 'commons-net', name: 'commons-net', version: '3.6'
+}

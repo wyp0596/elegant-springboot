@@ -1,0 +1,16 @@
+
+
+jar {
+	baseName = 'mybatis'
+	version = '0.0.1-SNAPSHOT'
+}
+
+
+group = 'com.ajavac'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+dependencies {
+	compile('org.mybatis.spring.boot:mybatis-spring-boot-starter:1.2.0')
+	compile('mysql:mysql-connector-java')
+}
