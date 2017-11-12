@@ -1,8 +1,6 @@
-
-
 jar {
-	baseName = 'commons'
-	version = '0.0.1-SNAPSHOT'
+    baseName = 'commons'
+    version = '0.0.1-SNAPSHOT'
 }
 
 
@@ -11,5 +9,6 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
 dependencies {
-	compile group: 'commons-net', name: 'commons-net', version: '3.6'
+    compile('commons-net:commons-net:3.6')
+    compile('com.google.code.gson:gson:2.8.2')
 }
