@@ -1,6 +1,3 @@
-# Re：从零开始的 Spring Boot 魔法书
-
-教程待添加
 
 
 ## hello-world 快速入门
